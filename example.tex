@@ -1,0 +1,45 @@
+\documentclass{scrreprt}
+
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\usepackage[colorlinks]{hyperref}
+
+\addbibresource{../bib/IEEEabrv,../bib/confs-jrnls-v1-DONOTEDIT,../bib/references-v5-DONOTEDIT,../bib/references}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Report}
+
+\author{Firstname Lastname}
+
+\begin{document}
+
+\maketitle
+
+\chapter{Basic Biblatex Commands}
+
+\begin{verbatim}
+\cite{shannon1948mathematical}
+\end{verbatim}
+\cite{shannon1948mathematical}
+\begin{verbatim}
+\cite[Chapter 1]{cover2006elements}
+\end{verbatim}
+\cite[Chapter 1]{cover2006elements}
+\begin{verbatim}
+\fullcite{shannon1948mathematical}
+\end{verbatim}
+\fullcite{shannon1948mathematical}
+\begin{verbatim}
+\cite{shannon1948mathematical,gallager1968information,cover2006elements}
+\end{verbatim}
+\cite{shannon1948mathematical,gallager1968information,cover2006elements}
+\begin{verbatim}
+\cite{wiki:Volume_of_an_n-ball}
+\end{verbatim}
+\cite{wiki:Volume_of_an_n-ball}
+\begin{verbatim}
+\printbibliography
+\end{verbatim}
+This print the bibliography starting on a new page (see next page :)
+\printbibliography
+
+\end{document}
